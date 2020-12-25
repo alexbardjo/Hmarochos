@@ -1,0 +1,199 @@
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;cat
+}
+
+
+
+
+.header {
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    /*height: 60px;*/
+    border-top: 1px solid #e7e7e7;
+    /*position: fixed;*/
+    left: 0;
+    right: 0;
+}
+
+.header-btn {
+    visibility: hidden;
+}
+
+.header-logo {
+
+}
+
+
+
+
+.header-logo__icon {
+    width: 140px;
+    padding-top: 10px;
+}
+
+
+.header-navbar {
+
+    padding-top: 30px;
+}
+
+.header-navbar__link {
+    color: #3f4f62;
+    text-transform: uppercase;
+    margin-right: 30px;
+    /*font-weight: 500;*/
+}
+
+.header-navbar__link:last-child {
+    margin-right: 0;
+}
+
+
+
+
+.header-navbar__link:hover {
+    color: #008080;
+}
+
+
+.header-navbar {
+
+    /*   padding-top: 15px; */
+}
+
+
+
+
+.navbar-list {
+    display: flex;
+    padding-top: 15px;
+
+}
+
+.navbar-list__item {
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+
+.navbar-list__item:last-child {
+    padding-right: 0;
+}
+
+.menu-list__link {
+    color: #3f4f62;
+}
+
+.menu-list__link:hover {
+    color: #008080;
+}
+
+
+.social-links {
+
+}
+
+.social-links-list {
+    display: flex;
+    padding-top: 15px;
+}
+
+.social-links-list__item {
+    padding-right: 8px;
+}
+
+.social-links-list__item:last-child {
+    padding-right: 0;
+}
+
+.social-links-list__img {
+    width: 27px;
+}
+
+.block {
+    height: 100px;
+    background-color: #e6e6e6;
+}
+
+.news-box {
+    padding: 30px 15px 0;
+
+}
+
+
+.news-box__list {
+    background-color: #f9f9f9;
+    width: 520px;
+    height: 680px;
+    padding: 30px 30px 20px 25px;
+}
+
+.news-box__list__link {
+    color: #474747;
+    font-size: 15px;
+    line-height: 1.4 !important;
+
+}
+
+.news-box__list__title {
+    width: 90px;
+
+}
+
+.news-box__list__title h3 {
+    background: #777;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.news-box__list__text {
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 1124px) {
+    .header-navbar {
+        visibility: hidden;
+    }
+    .social-links {
+        visibility: hidden;
+    }
+
+    .header-btn {
+        visibility: visible;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ddd;
+        margin-top: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .header-btn:hover {
+        background-color: #ddd;
+    }
+    
+    .header-btn div {
+        width: 15px;
+        height: 2px;
+        background-color: #777777;
+        margin: 1px 0;
+
+    }
+
+
+}
+
