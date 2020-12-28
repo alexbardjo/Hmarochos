@@ -4,22 +4,27 @@ a {
 }
 
 ul {
-    list-style-type: none;cat
+    list-style-type: none;
 }
 
-
+body {
+    font-family: open sans, serif;
+    font-size: 14px;
+}
 
 
 .header {
     padding: 0 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #f8f8f8;
     /*height: 60px;*/
     border-top: 1px solid #e7e7e7;
-    /*position: fixed;*/
+    position: fixed;
     left: 0;
     right: 0;
+    top: 0;
+    box-shadow: 0 1px 4px -1px rgba(50, 50, 50, .2);
 }
 
 .header-btn {
@@ -31,8 +36,6 @@ ul {
 }
 
 
-
-
 .header-logo__icon {
     width: 140px;
     padding-top: 10px;
@@ -40,131 +43,200 @@ ul {
 
 
 .header-navbar {
-
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .header-navbar__link {
-    color: #3f4f62;
+    color: #777;
     text-transform: uppercase;
     margin-right: 30px;
-    /*font-weight: 500;*/
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 13px;
+    transition: color 0.3s;
 }
 
 .header-navbar__link:last-child {
     margin-right: 0;
 }
 
-
-
-
 .header-navbar__link:hover {
     color: #008080;
 }
 
-
-.header-navbar {
-
-    /*   padding-top: 15px; */
+.header-social {
+    margin-top: 25px;
 }
 
-
-
-
-.navbar-list {
-    display: flex;
-    padding-top: 15px;
-
+.header-social__link {
+    margin-right: 10px;
 }
 
-.navbar-list__item {
-    padding-right: 30px;
-    text-transform: uppercase;
+.header-social__link:last-child {
+    margin-right: 0;
 }
 
-.navbar-list__item:last-child {
-    padding-right: 0;
-}
-
-.menu-list__link {
-    color: #3f4f62;
-}
-
-.menu-list__link:hover {
-    color: #008080;
-}
-
-
-.social-links {
-
-}
-
-.social-links-list {
-    display: flex;
-    padding-top: 15px;
-}
-
-.social-links-list__item {
-    padding-right: 8px;
-}
-
-.social-links-list__item:last-child {
-    padding-right: 0;
-}
-
-.social-links-list__img {
+.header-social__img {
     width: 27px;
 }
 
-.block {
-    height: 100px;
+.projectsBar {
+    /*margin-top: 60px;*/
+    padding-bottom: 15px;
+    padding-top: 80px;
     background-color: #e6e6e6;
+    box-shadow: inset 0 -1px 4px -1px rgba(50, 50, 50, .1);
+    display: flex;
+    justify-content: center;
 }
 
-.news-box {
-    padding: 30px 15px 0;
+.projectsBar-title {
+    margin: auto 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 11px;
+}
+
+.projectsBar-projects {
+    text-align: center;
+}
+
+.projectsBar-projects p {
+    color: #575757;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
 
 }
 
+.projectsBar-projects__img {
+    width: 50px;
+    margin: 0 auto;
+}
 
-.news-box__list {
+.newsBox {
+    display: flex;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+
+}
+
+.newsBox-newsline {
     background-color: #f9f9f9;
-    width: 520px;
-    height: 680px;
-    padding: 30px 30px 20px 25px;
+    padding: 30px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /*width: 600px;*/
 }
 
-.news-box__list__link {
+.newsBox-newsline__title {
+    font-size: 12px;
+    background: #777;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 14px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.newsBox-newsline__link {
+    margin-bottom: 20px;
     color: #474747;
     font-size: 15px;
-    line-height: 1.4 !important;
-
+    display: inline-block;
+    transition: color 0.3s, text-decoration 0.5s;
 }
 
-.news-box__list__title {
-    width: 90px;
-
+.newsBox-newsline__link:last-child {
+    margin-bottom: 0;
 }
 
-.news-box__list__title h3 {
-    background: #777;
+.newsBox-newsline__link:hover {
+    color: firebrick;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: firebrick;
+}
+
+.newsBox-box {
+    /*width: 200px;*/
+    min-height: 300px;
+    /*min-width: 200px;*/
+    background-image: url(https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild6164-3831-4630-b962-396261663033__street-238458_960_72.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.newsBox-box__class {
+    background-color: rgba(0,0,0,.25);
+    padding: 4px 8px;
+    font-size: 10px;
     text-transform: uppercase;
-    text-align: center;
-    padding: 10px 0;
-    color: #fff;
-    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    display: inline-block;
+    color: white;
+    vertical-align: center;
 }
 
-.news-box__list__text {
-    margin-bottom: 30px;
+.newsBox-box__class:before {
+    content: url("https://img.icons8.com/fluent-systems-regular/24/000000/bus.png");
+    width: 8px;
+    /*height: 8px;*/
 }
+
+.newsBox-box__container {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: 0 1px 4px -1px rgba(50, 50, 50, .2);
+
+}
+
+.newsBox-box__title {
+    margin-top: 9px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: none;
+}
+
+.newsBox-box__category {
+    background-color: #34495e;
+    color: #fff;
+    padding: 6px 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1124px) {
     .header-navbar {
         visibility: hidden;
     }
-    .social-links {
+
+    .header-social {
         visibility: hidden;
     }
 
@@ -181,11 +253,11 @@ ul {
         justify-content: center;
 
     }
-    
+
     .header-btn:hover {
         background-color: #ddd;
     }
-    
+
     .header-btn div {
         width: 15px;
         height: 2px;
