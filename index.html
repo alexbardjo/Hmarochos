@@ -13,33 +13,45 @@
 </head>
 <body>
 <header class="header">
-    <a class="header-logo" href="#">
-        <img class="header-logo__icon"
+    <a class="header__home-link" href="/">
+        <img class="header__logo"
              src="https://hmarochos.kiev.ua/wp-content/themes/design/images/hmarochos_logo_new.svg?ver=1.0.0"
              alt="head-icon">
     </a>
-    <div class="header-navbar">
-        <a class="header-navbar__link" href="#">Новини</a>
-        <a class="header-navbar__link" href="#">Середовище</a>
-        <a class="header-navbar__link" href="#">Міська політика</a>
-        <a class="header-navbar__link" href="#">Соціум</a>
-        <a class="header-navbar__link" href="#">Економіка</a>
-    </div>
-    <div class="header-social">
-        <a class="header-social__link" href="#"><img class="header-social__img"
-                                                     src="https://www.flaticon.com/svg/static/icons/svg/145/145802.svg"
-                                                     alt="facebook"></a>
-        <a class="header-social__link" href="#"><img class="header-social__img"
-                                                     src="https://www.flaticon.com/svg/static/icons/svg/145/145812.svg"
-                                                     alt="twitter"></a>
-        <a class="header-social__link" href="#"><img class="header-social__img"
-                                                     src="https://www.flaticon.com/svg/static/icons/svg/2111/2111646.svg"
-                                                     alt="telegram"></a>
-        <a class="header-social__link" href="#"><img class="header-social__img"
-                                                     src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
-                                                     alt="search"></a>
-    </div>
-    <div class="header-btn">
+    <nav class="header__navbar">
+        <a class="header__link" href="#">Новини</a>
+        <a class="header__link" href="#">Середовище</a>
+        <a class="header__link" href="#">Міська політика</a>
+        <a class="header__link" href="#">Соціум</a>
+        <a class="header__link" href="#">Економіка</a>
+    </nav>
+    <nav class="header__social social">
+        <a class="social__link" href="#">
+            <img
+                    class="social__img"
+                    src="https://www.flaticon.com/svg/static/icons/svg/145/145802.svg"
+                    alt="facebook">
+        </a>
+        <a class="social__link" href="#">
+            <img
+                    class="social__img"
+                    src="https://www.flaticon.com/svg/static/icons/svg/145/145812.svg"
+                    alt="twitter">
+        </a>
+        <a class="social__link" href="#">
+            <img
+                    class="social__img"
+                    src="https://www.flaticon.com/svg/static/icons/svg/2111/2111646.svg"
+                    alt="telegram">
+        </a>
+        <a class="social__link" href="#">
+            <img
+                    class="social__img"
+                    src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
+                    alt="search">
+        </a>
+    </nav>
+    <div class="header__hamburger">
         <div></div>
         <div></div>
         <div></div>
@@ -79,33 +91,33 @@
 <!--</div>-->
 
 
-<div class="projectsBar">
-    <span class="projectsBar-title">
+<section class="projectsBar">
+    <h6 class="projectsBar__title">
         Спецпоекти:
-    </span>
-    <figure class="projectsBar-projects">
-        <a href="#">
-            <div class="projectsBar-projects__project">
-                <img class="projectsBar-projects__img"
-                     src="https://hmarochos.kiev.ua/wp-content/themes/design/images/special/usaid_small.png"
-                     alt="USAID_img">
-                <p>Енергетичний діалог</p>
-            </div>
-        </a>
-
-    </figure>
-</div>
+    </h6>
+    <a href="#" class="projectsBar__projects projects">
+        <figure>
+            <img class="projects-img"
+                 src="https://hmarochos.kiev.ua/wp-content/themes/design/images/special/usaid_small.png"
+                 alt="USAID_img">
+            <figcaption>
+                Енергетичний діалог
+            </figcaption>
+        </figure>
+    </a>
+</section>
 
 
 <div class="newsBox">
-    <div class="newsBox-newsline">
+    <div class="newsBox__newsline">
         <a href="#">
-            <h3 class="newsBox-newsline__title">
+            <h3 class="newsBox__newsline-title">
                 Новини
             </h3>
         </a>
-        <a href="#" class="newsBox-newsline__link">Депутати Київради не підтримали
-            фінансування веломаршрутів і трамваю в центр</a>
+        <a href="#" class="newsBox-newsline__link">
+            Депутати Київради не підтримали фінансування веломаршрутів і трамваю в центр
+        </a>
         <a href="#" class="newsBox-newsline__link">Як у Варшаві організовують зони
             відпочинку біля офісів місцевої влади? (фото)</a>
         <a href="#" class="newsBox-newsline__link">Де можна стежити онлайн за прибиранням
@@ -135,37 +147,10 @@
         </div>
     </div>
     <div class="newsBox-box">
-        <div><span class="newsBox-box__class">
-            Транспорт
-        </span>
-        </div>
-        <div class="newsBox-box__container">
-            <h3 class="newsBox-box__title">
-                Скільки коштуватиме проїзд концесійними дорогами в Україні?
-            </h3>
-            <span class="newsBox-box__category">
-                Топ-новини
+        <div>
+            <span class="newsBox-box__class">
+                Транспорт
             </span>
-        </div>
-    </div>
-    <div class="newsBox-box">
-        <div><span class="newsBox-box__class">
-            Транспорт
-        </span>
-        </div>
-        <div class="newsBox-box__container">
-            <h3 class="newsBox-box__title">
-                Скільки коштуватиме проїзд концесійними дорогами в Україні?
-            </h3>
-            <span class="newsBox-box__category">
-                Топ-новини
-            </span>
-        </div>
-    </div>
-    <div class="newsBox-box">
-        <div><span class="newsBox-box__class">
-            Транспорт
-        </span>
         </div>
         <div class="newsBox-box__container">
             <h3 class="newsBox-box__title">
@@ -179,8 +164,38 @@
     <div class="newsBox-box">
         <div>
             <span class="newsBox-box__class">
-            Транспорт
-        </span>
+                Транспорт
+            </span>
+        </div>
+        <div class="newsBox-box__container">
+            <h3 class="newsBox-box__title">
+                Скільки коштуватиме проїзд концесійними дорогами в Україні?
+            </h3>
+            <span class="newsBox-box__category">
+                Топ-новини
+            </span>
+        </div>
+    </div>
+    <div class="newsBox-box">
+        <div>
+            <span class="newsBox-box__class">
+                Транспорт
+            </span>
+        </div>
+        <div class="newsBox-box__container">
+            <h3 class="newsBox-box__title">
+                Скільки коштуватиме проїзд концесійними дорогами в Україні?
+            </h3>
+            <span class="newsBox-box__category">
+                Топ-новини
+            </span>
+        </div>
+    </div>
+    <div class="newsBox-box">
+        <div>
+            <span class="newsBox-box__class">
+                Транспорт
+            </span>
         </div>
         <div class="newsBox-box__container">
             <h3 class="newsBox-box__title">
@@ -192,5 +207,60 @@
         </div>
     </div>
 </div>
+<footer class="footer">
+    <div class="footer__weInInternet">
+        <h4 class="footer-title">
+            Соціальні мережі
+        </h4>
+        <a class="footer-link" href="#">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/145/145802.svg" alt=""
+                 class="footer-img social__img">
+            <p>
+                Facebook
+            </p>
+        </a>
+        <a class="footer-link" href="#">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111646.svg" alt=""
+                 class="footer-img social__img">
+            <p>
+                Telegram
+            </p>
+        </a>
+
+            <a class="footer-link" href="#">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/145/145812.svg" alt=""
+                     class="footer-img social__img">
+                <p>
+                    Twitter
+                </p>
+            </a>
+
+    </div>
+    <div class="footer__regulations">
+        <h4 class="footer-title">
+            Використання матеріалів
+        </h4>
+        <p>
+            При будь-якому використанні новин та статей сайту дозвіл редакції на публікацію й гіперпосилання відкрите
+            для пошукових систем на hmarochos.kiev.ua обов'язкові.
+        </p>
+        <a href="#">
+            Політика конфіденційності сайту «Хмарочос»
+        </a>
+    </div>
+    <div class="footer__aboutUs">
+        <h4 class="footer-title">
+            Про нас
+        </h4>
+        <p>
+            Київський міський журнал «Хмарочос». Свіжі новини та цікаві статті про події у Києві та розвиток міста.
+        </p>
+        <a href="#">
+            Зробити внесок
+        </a>
+    </div>
+</footer>
+
+
 </body>
 </html>
